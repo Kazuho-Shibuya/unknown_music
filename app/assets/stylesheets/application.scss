@@ -1,0 +1,10 @@
+@import "bootstrap";
+
+.jumbotron-extend {
+  position: relative;
+  height: 100vh;
+  min-height: 300px;
+  background-image: image-url("IMG_6044.JPG");
+  background-size:  cover;
+  background-position: center center;
+}

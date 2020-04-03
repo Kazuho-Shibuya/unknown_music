@@ -46,3 +46,7 @@ Layout/LineLength:
 #Metrics/AbcSize:
 #  Enabled: true
 #  Max: 20
+
+# Rails用に最適化されたモード
+Rails:
+  Enabled: true
