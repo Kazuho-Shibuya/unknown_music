@@ -5,11 +5,28 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
   </head>
-
   <body>
-    <%= yield %>
+    <header class="navbar navbar-fixed-top">
+      <div class="container-fuild">
+        <%= link_to "UnknownMusic", '#', id: "logo" %>
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "曲検索",   '#' %></li>
+            <li><%= link_to "新規登録",   '#' %></li>
+            <li><%= link_to "ログイン", '#' %></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container-fuild">
+      <%= yield %>
+    </div>
   </body>
 </html>

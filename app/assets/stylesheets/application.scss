@@ -1,5 +1,26 @@
+@import "bootstrap-sprockets";
 @import "bootstrap";
 
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+//TOP画面
+//背景画像
 .jumbotron-extend {
   position: relative;
   height: 100vh;
@@ -7,4 +28,36 @@
   background-image: image-url("IMG_6044.JPG");
   background-size:  cover;
   background-position: center center;
+}
+
+//タイトル、ボタン位置
+.jumbotron-container {
+  position: absolute;
+  top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+//画面固定
+html,body{
+  overflow: hidden;
+}
+
+//ボタンスタイル
+.btn-style {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: white;
+  border: solid 2px white;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+//ボタン選択時
+.btn-style:hover {
+  background: white;
+  color: black;
 }
