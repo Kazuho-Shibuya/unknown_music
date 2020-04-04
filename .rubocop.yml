@@ -47,6 +47,18 @@ Layout/LineLength:
 #  Enabled: true
 #  Max: 20
 
-# Rails用に最適化されたモード
-Rails:
+#versionupによって指定
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Style/HashEachMethods:
+  Enabled: true
+
+Style/HashTransformKeys:
+  Enabled: true
+
+Style/HashTransformValues:
   Enabled: true
