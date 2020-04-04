@@ -7,17 +7,18 @@
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #fff;
+  color: white;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
 }
 
-#logo:hover {
-  color: #fff;
-  text-decoration: none;
-}
+
 
 //TOP画面
 //背景画像
@@ -54,10 +55,8 @@ html,body{
   border: solid 2px white;
   border-radius: 3px;
   transition: .4s;
-}
-
-//ボタン選択時
-.btn-style:hover {
+  &:hover {
   background: white;
   color: black;
+  }
 }
