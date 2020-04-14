@@ -1,10 +1,10 @@
 <header class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <%= link_to 'UnknownMusic', '#',class: 'logo'%>
+    <%= link_to 'UnknownMusic', root_path,class: 'logo'%>
     <ul class="navbar-nav">
       <li><%= link_to '曲検索', '#', class: 'link-style' %></li>
-      <li><%= link_to '新規登録', '#', class: 'link-style' %></li>
-      <li><%= link_to 'ログイン', '#', class: 'link-style' %></li>
+      <li><%= link_to '新規登録', new_user_registration_path, class: 'link-style' %></li>
+      <li><%= link_to 'ログイン', new_user_session_path, class: 'link-style' %></li>
     </ul>
   </div>
 </header>
