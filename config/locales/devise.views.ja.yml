@@ -7,6 +7,14 @@ ja:
         password: "パスワード"
         password_confirmation: "確認用パスワード"
         remember_me: "ログインを記憶"
+    errors:
+        models:
+          user:
+            attributes:
+              email:
+                blank: "が空です"
+              password:
+                blank: "が空です"
     models:
       user: "ユーザ"
   devise:

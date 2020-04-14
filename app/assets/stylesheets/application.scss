@@ -1,23 +1,27 @@
-@import "bootstrap-sprockets";
 @import "bootstrap";
 
 /* header */
 
-#logo {
-  float: left;
-  margin-right: 10px;
+.logo {
+  position: relative;
   font-size: 1.7em;
   color: white;
-  text-transform: uppercase;
   letter-spacing: -1px;
-  padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: white;
     text-decoration: none;
+    color: #c84289;
   }
 }
 
+.link-style {
+  color: white;
+  margin: 1rem;
+  &:hover {
+    text-decoration: none;
+    color: #c84289;
+  }
+}
 
 
 //TOP画面
@@ -44,8 +48,8 @@
 //画面固定
 html,body{
   overflow: hidden;
+  
 }
-
 //ボタンスタイル
 .btn-style {
   display: inline-block;

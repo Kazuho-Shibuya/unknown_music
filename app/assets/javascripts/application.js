@@ -4,5 +4,6 @@
 //= require turbolinks
 
 // 追記 JavaScript、jQueryなどを読み込む
-//= require jquery
+//= require jquery3
 //= require bootstrap-sprockets
+//= require popper
