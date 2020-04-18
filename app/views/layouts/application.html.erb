@@ -4,17 +4,16 @@
     <title><%= full_title(yield(:title))%></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= render 'layouts/shim' %>
   </head>
   <body>
     <%= render 'layouts/header' %>
-    <div class="container-fuild">
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <main class="container-fuild">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
       <%= yield %>
-    </div>
+    </main>
   </body>
 </html>
