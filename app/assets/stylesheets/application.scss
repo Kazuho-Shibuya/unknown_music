@@ -81,13 +81,14 @@ main {
 
 // signup背景画像
 .jumbotron-signup-img {
+  position: relative;
   background-image: image-url("signup.jpg");
 }
 
 //signup表示形式
 .container-signup {
   position: absolute;
-  top: 35%;
+  top: 0%;
   left: 75%;
   transform: translate(-50%, -50%);
   color: white;
@@ -97,3 +98,19 @@ main {
 .container-signup h2 {
   padding-bottom: 20px;
 }
+
+// /* forms */
+
+// input,
+// textarea,
+// select,
+// .uneditable-input {
+//   //border: 1px solid #bbb;
+//   width: 100%;
+//   margin-bottom: 15px;
+//   //   //@include box_sizing;
+// }
+
+// // input {
+// //   height: auto !important;
+// // }
