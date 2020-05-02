@@ -1,34 +1,25 @@
 @import "bootstrap";
 
 /* universal */
-body {
-  overflow: hidden;
-}
+// body {
+//   overflow: hidden;
+// }
 
-//背景画像
-.jumbotron-img {
+.img-layout {
   position: relative;
   height: 100vh;
-  min-height: 300px;
   background-size: cover;
   background-position: center center;
 }
 
-/* top */
-
-//TOP画面
-.jumbotron-top-img {
-  background-image: image-url("top.JPG");
+label {
+  text-align: left;
+  margin-bottom: 0;
 }
 
-//タイトル、ボタン位置
-.container-top {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
+.form_control {
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 //ボタンスタイル
@@ -37,6 +28,7 @@ body {
   padding: 0.3em 1em;
   text-decoration: none;
   color: white;
+  background: rgba(0, 0, 0, 0.2);
   border: solid 2px white;
   border-radius: 3px;
   transition: 0.4s;
@@ -47,18 +39,27 @@ body {
   }
 }
 
+/* errors */
+
+.error_explanation {
+  color: red;
+  width: 100%;
+  ul {
+    color: red;
+  }
+}
+
 /* header */
 
 .logo {
-  position: relative;
-  font-size: 1.7em;
+  font-size: 1.7rem;
   color: white;
   letter-spacing: -1px;
   font-weight: bold;
 
   &:hover {
     text-decoration: none;
-    color: #c84289;
+    color: #ca046e;
   }
 }
 
@@ -74,43 +75,38 @@ body {
 
 /* main */
 
-main {
-  padding-top: 55px;
-  overflow: hidden;
+.top-img {
+  background-image: image-url("top.JPG");
 }
 
-// signup背景画像
-.jumbotron-signup-img {
-  position: relative;
+// 背景画像
+.signup-img {
   background-image: image-url("signup.jpg");
 }
 
-//signup表示形式
-.container-signup {
+.container-top {
   position: absolute;
-  top: 0%;
-  left: 75%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
 }
 
-.container-signup h2 {
-  padding-bottom: 20px;
+.container-signup {
+  position: absolute;
+  top: 35%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
-// /* forms */
+.container-signup h1 {
+  margin-top: 10rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
 
-// input,
-// textarea,
-// select,
-// .uneditable-input {
-//   //border: 1px solid #bbb;
-//   width: 100%;
-//   margin-bottom: 15px;
-//   //   //@include box_sizing;
-// }
-
-// // input {
-// //   height: auto !important;
-// // }
+.btn-signup {
+  width: 100%;
+}
